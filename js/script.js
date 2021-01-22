@@ -1,5 +1,3 @@
-const { json } = require("express");
-
 window.addEventListener('DOMContentLoaded', () => {
 
     // Tabs
