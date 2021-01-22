@@ -1,3 +1,5 @@
+const { json } = require("express");
+
 window.addEventListener('DOMContentLoaded', () => {
 
     // Tabs
@@ -244,15 +246,18 @@ window.addEventListener('DOMContentLoaded', () => {
                     'Content-type': 'application/json'
                 },
                 body: JSON.stringify(object)
-            }).then(data => data.text())
+            })
+            .then(data => data.text())
             .then(data => {
                 console.log(data);
                 showThanksModal(message.success);
                 
                 statusMessage.remove();
-            }).catch(() => {
+            })
+            .catch(() => {
                 showThanksModal(message.failure);
-            }).finally(() => {
+            })
+            .finally(() => {
                 form.reset();
             });
 
@@ -282,4 +287,8 @@ window.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }, 4000);
     }
+
+    fetch('http://localhost:3000/menu')
+        .then(data => data.json())
+        .then(res => console.log(res));
 });
