@@ -7,11 +7,11 @@ import forms from './modules/forms';
 import slider from './modules/slider';
 
 window.addEventListener('DOMContentLoaded', () => {
-    tabs();
+    tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
     modal();
-    timer();
+    timer('.timer', '2021-03-11');
     cards();
     calc();
-    forms();
+    forms('.form', modalTimerId);
     slider();
 });
