@@ -30,7 +30,6 @@ function forms(formsSelector, modalTimerId) {
 
             postData('http://localhost:3000/requests', json)
             .then(data => {
-                console.log(data);
                 showThanksModal(message.success);
                 statusMessage.remove();
             }).catch(() => {

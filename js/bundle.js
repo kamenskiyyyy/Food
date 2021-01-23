@@ -234,7 +234,6 @@ function forms(formsSelector, modalTimerId) {
 
             (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)('http://localhost:3000/requests', json)
             .then(data => {
-                console.log(data);
                 showThanksModal(message.success);
                 statusMessage.remove();
             }).catch(() => {
