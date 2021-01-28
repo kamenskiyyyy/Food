@@ -17,14 +17,11 @@
   },
   "homepage": "https://github.com/kamenskiyyyy/practice_JS#readme",
   "devDependencies": {
-<<<<<<< HEAD
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "babel-loader": "^8.2.2",
     "core-js": "^3.8.3"
-=======
->>>>>>> parent of c577629... add babel
     "json-server": "^0.16.3",
     "webpack": "^5.17.0",
     "webpack-cli": "^4.4.0"
