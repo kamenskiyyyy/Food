@@ -1,6 +1,3 @@
-require('es6-promise').polyfill();
-import 'nodelist-foreach-polyfill';
-
 import tabs from './modules/tabs';
 import modal from './modules/modal';
 import timer from './modules/timer';
@@ -15,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
     modal('[data-modal]', '.modal', modalTimerId);
-    timer('.timer', '2021-05-20');
+    timer('.timer', '2020-06-11');
     cards();
     calc();
     forms('form', modalTimerId);
